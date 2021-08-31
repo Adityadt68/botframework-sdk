@@ -289,7 +289,7 @@ namespace Microsoft.BotBuilderSamples
         private LuisRecognizer CreateLuisRecognizer(IConfiguration configuration, string appIdKey)
         {
             var luisApplication = new LuisApplication(
-                configuration[appIdKey],
+                configuration["LuisAppId"],
                 configuration["LuisAPIKey"],
                 configuration["LuisAPIHostName"]);
 
